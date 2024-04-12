@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(233, 47%, 7%);
+ 
+}
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  border-radius:8px 0px 0px 8px ;
+  padding: 23px;
+  background-color:  hsl(244, 38%, 16%)
+  
+}
+.content1{
+  padding: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.content1 > p:nth-child(1){
+  font-size: 30px;
+  width: 330px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color:hsl(0, 0%, 100%)
+  
+}
+.content1 > p:nth-child(2){
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 400;
+  width: 350px;
+  font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.content1  .insights{
+  color: hsl(277, 64%, 61%);
+}
+.foot{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.foot1 > p:nth-child(1){
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color:hsl(0, 0%, 100%)
+}
+.foot1 > p:nth-child(2){
+  font-size: 12px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+.image{
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.image img{
+  height: 378px;
+  border-radius:0px 8px 8px 0px ;
+  
+}
+.box{
+  width: 458px;
+  height: 378px;
+  border-radius:0px 7px 7px 0px ;
+  position: absolute; 
+  background-color:hsl(277, 64%, 61%)  ; 
+  filter:  opacity(0.6) brightness(70%) contrast(200%) saturate(65%);         
+
+}
+
+@media only screen and (max-width:930px){
+.card{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.content{
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 0px 0px 8px 8px;
+
+}
+.content1{
+  padding: 0px;
+}
+.content1 > p:nth-child(1){
+  width: 300px;
+  text-align: center;
+}
+
+.content1 > p:nth-child(2){
+  width: 253px;
+  text-align: center;
+  margin: auto;
+}
+.foot {
+  flex-direction: column;
+}
+.foot1 > p:nth-child(1){
+  text-align: center;
+}
+.image img {
+  width: 346px;
+  height: 285px;
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;  
+}
+.box {
+  width: 346px;
+  height: 285px;
+  border-radius: 8px 8px 0px 0px;
+}
+}
+@media only screen and (max-width:376px){
+  .image img{
+    margin-top:215px ;
+  }
+  .box{
+    margin-top:215px;
+  }
+}
