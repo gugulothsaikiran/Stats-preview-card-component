@@ -131,11 +131,13 @@ main{
   height: 285px;
   border-radius: 8px 8px 0px 0px;
   object-fit: cover;  
+  margin-top: 10px;
 }
 .box {
   width: 346px;
   height: 285px;
   border-radius: 8px 8px 0px 0px;
+  margin-top: 10px;
 }
 }
 @media only screen and (max-width:376px){
